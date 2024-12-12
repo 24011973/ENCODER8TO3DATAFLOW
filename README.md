@@ -46,10 +46,13 @@ Developed by: RegisterNumber:
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![WhatsApp Image 2024-12-12 at 22 26 31_7a7ab6ce](https://github.com/user-attachments/assets/7fe71c5d-55ed-4b68-b8aa-2f62aa6b525a)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![WhatsApp Image 2024-12-12 at 22 26 32_3916b2b7](https://github.com/user-attachments/assets/64a6526d-1451-4748-b644-2cb2b40f652b)
 
 **RESULTS**
+An 8-to-3 Encoder is a combinational circuit that converts 8 input lines (each representing a binary value) into a 3-bit output code. The output binary value corresponds to the index of the input line that is high (logic 1). If multiple inputs are high, the encoder typically outputs the index of the highest input line.
 
 
 

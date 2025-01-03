@@ -35,24 +35,33 @@ Logical circuit of the above expressions is given below:
 Figure 02  Encoder 8 * 3
 
 **Procedure**
+1. Type the program in Quartus software.
+2. Compile and run the program.
+3. Generate the RTL schematic and save the logic diagram.
+4. Create nodes for inputs and outputs to generate the timing diagram.
+5. For different input combinations generate the timing diagram.
 
-/* write all the steps invloved */
 
 **PROGRAM**
+module exp5(din,a,b,c);
+input [0:7] din;
+output a,b,c;
+assign a=(din[4]| din[5]| din[6 ]| din[7]);
+assign b=(din[2]| din[3]| din[6]| din[7]);
+assign c=(din[1]| din[3]| din[5 ]| din[7]);
+endmodule
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
+Developed by:ETHIC WARAN S RegisterNumber: 24011973
 
-Developed by: RegisterNumber:
-*/
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
-![WhatsApp Image 2024-12-12 at 22 26 31_7a7ab6ce](https://github.com/user-attachments/assets/7fe71c5d-55ed-4b68-b8aa-2f62aa6b525a)
+![image](https://github.com/user-attachments/assets/cacc94c1-aff2-4d8e-ae37-2a65fee89704)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-![WhatsApp Image 2024-12-12 at 22 26 32_3916b2b7](https://github.com/user-attachments/assets/64a6526d-1451-4748-b644-2cb2b40f652b)
+![Screenshot 2024-12-03 125942](https://github.com/user-attachments/assets/7c7ae128-b6ff-4d14-b6dc-773cd2852114)
 
 **RESULTS**
-An 8-to-3 Encoder is a combinational circuit that converts 8 input lines (each representing a binary value) into a 3-bit output code. The output binary value corresponds to the index of the input line that is high (logic 1). If multiple inputs are high, the encoder typically outputs the index of the highest input line.
+  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables are verified
 
 
 
